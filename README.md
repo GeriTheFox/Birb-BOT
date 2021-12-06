@@ -5,7 +5,7 @@ The bot use the e621 API to get the images, by deafult filtered to SFW, but it c
 
 to use just install the Discord.py 
 ```
-by pip install -U discord.py
+pip install -U discord.py
 ```
 next you have to set your token into the main.py file
 
