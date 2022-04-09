@@ -13,6 +13,5 @@ next you have to rename the .env.example to .env then then put your token there.
 
 then just start the bot, i recommend use a tmux session
 ```
-python3 main.py
-python3 daily_birb.py
+python3 filename
 ```
