@@ -27,12 +27,10 @@ def check_if_exist(username):
 def insert_new_user(username):
     sql = "INSERT INTO MC_PLAYTIME(USERNAME,PLAYTIME) VALUES ('"+str(username)+"','1')"
     stmt = ibm_db.exec_immediate(conn, sql)
-    print(stmt)
 
 def update_time(username):
     sql = "UPDATE MC_PLAYTIME SET PLAYTIME = PLAYTIME + 1 WHERE USERNAME = '"+str(username)+"'"
     stmt = ibm_db.exec_immediate(conn, sql)
-    print(stmt)
 
 def update():
     while True:
