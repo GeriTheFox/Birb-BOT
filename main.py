@@ -9,7 +9,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
-    game = discord.Game("avali.hu")
+    game = discord.Game("git.avali.hu")
     await client.change_presence(status=discord.Status.idle, activity=game)
 
 @client.event
@@ -43,6 +43,6 @@ async def on_message(message):
 
 
     elif message.content.startswith('>info'):
-        await message.channel.send("Birb BOT 2.1 by Geri#1337 | https://github.com/GeriTheFox")
+        await message.channel.send("Birb BOT 2.1 by Geri#1337 | git.avali.hu")
 
 client.run(config('TOKEN'))
