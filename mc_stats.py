@@ -22,9 +22,10 @@ def disconnect():
 def playtime():
     global conn
     if(reconnect()):
-        sql = "SELECT * FROM MC_PLAYTIME ORDER BY 'PLAYTIME' DESC LIMIT 10"
+        sql = "SELECT * FROM MC_PLAYTIME ORDER BY PLAYTIME DESC LIMIT 10"
         stmt = ibm_db.exec_immediate(conn, sql)
         tuple = ibm_db.fetch_assoc(stmt)
+
         array = []
         while tuple != False:
             array.append(tuple)
